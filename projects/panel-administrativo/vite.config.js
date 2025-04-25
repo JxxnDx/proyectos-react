@@ -9,7 +9,11 @@ export default defineConfig({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'], 
+      },
+    },
   },
   plugins: [react(), tailwindcss()],
 })
