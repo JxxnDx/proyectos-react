@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from '../public/logo.png'; // Adjust the path to your logo image
+import logo from '/logo.png'; 
 
 function Navbar() {
     return (
@@ -14,7 +14,7 @@ function Navbar() {
                 <li><NavLink className="transition-all duration-500 hover:bg-gray-700 p-2 rounded hover:rounded-2xl" to="proveedores">Proveedores</NavLink></li>
                 <li><NavLink className="transition-all duration-500 hover:bg-gray-700 p-2 rounded hover:rounded-2xl" to="Usuarios">Usuarios</NavLink></li>
             </ul>
-            <button className="transition-all duration-400 m-4 text-white p-2 rounded hover:bg-red-500 hover:rounded-2xl">Cerrar Sesión</button>
+            <NavLink to="logout" className="transition-all duration-400 m-4 text-white p-2 rounded hover:bg-red-500 hover:rounded-2xl">Cerrar Sesión</NavLink>
         </nav>
     )
 }

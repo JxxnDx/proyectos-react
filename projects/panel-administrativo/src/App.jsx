@@ -6,6 +6,7 @@ import Proveedores from './pages/Proveedores'
 import Usuarios from './pages/Usuarios'
 import Inicio from './pages/Inicio'
 import Error from './pages/Error'
+import Logout from './pages/Logout'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="clientes" element={<Clientes />} />
         <Route path="proveedores" element={<Proveedores />} />
         <Route path="usuarios" element={<Usuarios />} />
+        <Route path="logout" element={<Logout />} />
         <Route path="*" element={<Error />} />
       </Routes>
       </main>
