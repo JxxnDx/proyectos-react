@@ -1,9 +1,11 @@
 //import { useState } from 'react'
-import {Route, Routes, NavLink, BrowserRouter} from 'react-router-dom'
+import {Route, Routes, BrowserRouter} from 'react-router-dom'
 import Navbar from './Navbar'
 import Clientes from './pages/Clientes'
 import Proveedores from './pages/Proveedores'
 import Usuarios from './pages/Usuarios'
+import Inicio from './pages/Inicio'
+import Error from './pages/Error'
 
 function App() {
 
@@ -12,9 +14,11 @@ function App() {
       <Navbar />
       <main>
       <Routes>
-        <Route path="/" element={<Clientes />} />
+        <Route path="/" element={<Inicio />} />
+        <Route path="clientes" element={<Clientes />} />
         <Route path="proveedores" element={<Proveedores />} />
         <Route path="usuarios" element={<Usuarios />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       </main>
     </BrowserRouter>
