@@ -22,18 +22,18 @@ Implementación de react-router-dom para crear un Navbar simulando panel adminis
 ```
 
 ### Descripción 
-Este proyecto fue creado con Vite + React. Para iniciarlo, se ejecutó el siguiente comando:
+Este proyecto fue creado con Vite + React y tailwindcss para los estilos. Para iniciarlo, se ejecutó el siguiente comando:
 
 ```bash
 vite@latest
 ```
 Durante la instalación se seleccionó React y posteriormente JavaScript + SWC.
 
-Una vez creado el proyecto, se procedió a construir los distintos componentes del panel administrativo. A continuación se describen los principales archivos:
+Una vez creado el proyecto, se instaló tailwindcss y se procedió a construir los distintos componentes del panel administrativo. A continuación se describen los principales archivos:
 
 #### src
-- `Navbar.jsx`: Renderiza la barra de navegación de la página en general, que contiene los enlaces a las diferentes vistas.
-- `App.jsx`: Aunque se genera automáticamente, se configuró con <BrowserRouter>, <Routes> y <Route> para gestionar las rutas hacia las vistas dentro de pages.
+- `Navbar.jsx`: Renderiza la barra de navegación de la página en general, que contiene los enlaces a las diferentes vistas, se utiliza NavLink para redirigir según la ruta y manejar estado activo.
+- `App.jsx`: Se configuró con <BrowserRouter>, <Routes> y <Route> para gestionar las rutas hacia las vistas dentro de pages, y se renderiza el Navbar.
 - `main.jsx`:  Archivo principal que inicializa la aplicación y renderiza App.jsx.
 
 #### Pages
