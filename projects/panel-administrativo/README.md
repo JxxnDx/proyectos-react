@@ -1,5 +1,9 @@
 # Panel administrativo
 
+Ricardo ANdrés Pérez Porras - 2220078
+
+Juan David Pallares Pallares - 2220079
+
 Implementación de react-router-dom para crear un Navbar simulando panel administrativo simple.
 
 ## Estructura
