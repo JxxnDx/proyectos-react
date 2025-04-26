@@ -27,7 +27,7 @@ Este proyecto fue creado con Vite + React. Para iniciarlo, se ejecutó el siguie
 ```bash
 vite@latest
 ```
-Durante la instalación se seleccionó React.
+Durante la instalación se seleccionó React y posteriormente JavaScript + SWC.
 
 Una vez creado el proyecto, se procedió a construir los distintos componentes del panel administrativo. A continuación se describen los principales archivos:
 
