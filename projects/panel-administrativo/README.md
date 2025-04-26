@@ -1,6 +1,52 @@
-# Panel Administrativo
+# Panel administrativo
 
 Implementación de react-router-dom para crear un Navbar simulando panel administrativo simple.
+
+## Estructura
+```bash
+├── public
+├── src
+│   ├── pages
+│   │   ├── Clientes.jsx
+│   │   ├── Error.jsx
+│   │   ├── Inicio.jsx
+│   │   ├── Logout.jsx
+│   │   ├── Proveedores.jsx
+│   │   ├── Usuarios.jsx
+│   ├── App.jsx
+│   ├── Navbar.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── index.html
+├── ...otros archivos de configuración
+```
+
+### Descripción 
+Este proyecto fue creado con Vite + React. Para iniciarlo, se ejecutó el siguiente comando:
+
+```bash
+vite@latest
+```
+Durante la instalación se seleccionó React.
+
+Una vez creado el proyecto, se procedió a construir los distintos componentes del panel administrativo. A continuación se describen los principales archivos:
+
+#### src
+- `Navbar.jsx`: Renderiza la barra de navegación de la página en general, que contiene los enlaces a las diferentes vistas.
+- `App.jsx`: Aunque se genera automáticamente, se configuró con <BrowserRouter>, <Routes> y <Route> para gestionar las rutas hacia las vistas dentro de pages.
+- `main.jsx`:  Archivo principal que inicializa la aplicación y renderiza App.jsx.
+
+#### Pages
+- `Clientes.jsx`: Vista correspondiente al módulo de Clientes.
+- `Error.jsx`: Vista de error que se muestra cuando se accede a una ruta no definida.
+- `Inicio.jsx`: Vista inicial del panel de administración.
+- `Logout.jsx`: Vista que simula el cierre de sesión.
+- `Proveedores.jsx`: Vista correspondiente al módulo de Proveedores.
+- `Usuarios.jsx`: Vista correspondiente al módulo de Usuarios.
+
+Por último, se utilizó el archivo `index.html` para agregar el script que inicia la aplicación a través de `main.jsx`, el cual se encarga de renderizar los componentes principales. Además, en la carpeta `public` se incluyó un archivo que contiene el logo utilizado en la barra de navegación.
+
+A continuación, se presentan algunas imágenes del panel de administración, donde se muestran las diferentes vistas renderizadas:
 
 
 **Inicio**
